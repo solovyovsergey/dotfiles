@@ -94,3 +94,6 @@ command -v starship >/dev/null && eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
+
+# Импорт переменных окружения
+[ -f ~/.local_env ] && source ~/.local_env
