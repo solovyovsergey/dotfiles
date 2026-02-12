@@ -1,3 +1,6 @@
+# Добавляем локальные бинарники пользователя в PATH (нужно для zoxide и др.)
+export PATH="$HOME/.local/bin:$PATH"
+
 # Set up the prompt
 
 # Old initial prompt
@@ -88,3 +91,6 @@ fi
 
 # init starship
 command -v starship >/dev/null && eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+command -v zoxide >/dev/null && eval "$(zoxide init zsh)"
